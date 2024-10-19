@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: host
   become: true
   tasks:
     - name: Instalando o apache2 na maquina alvo
