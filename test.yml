@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Instalando o apache2 na maquina alvo
+      ansible.builtin.package:
+        name: apache2
