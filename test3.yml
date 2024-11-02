@@ -1,6 +1,7 @@
 ---
-hosts: host
-  - name: Install git
-    win_chocolatey:
-      name: git
-      state: present
+- hosts: host
+  tasks:
+   - name: Install git
+     win_chocolatey:
+       name: git
+       state: present
